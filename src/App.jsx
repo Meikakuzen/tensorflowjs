@@ -12,6 +12,8 @@ import TensorManipulation from './02Tensors/TensorManipulation';
 import VisualTensors from './03-ImageTensors/VisualTensors';
 import JpgsAndMore from './03-ImageTensors/JpgsAndMore';
 import CommonModifications from './03-ImageTensors/CommonModifications';
+import ResizingImageTensors from './03-ImageTensors/ResizingImageTensors';
+import Introduction from './04-Models/Introduction';
 
 
 function App() {
@@ -34,6 +36,11 @@ function App() {
               <Route path="/visualtensors" element={<VisualTensors />} />
               <Route path="/jpgsandmore" element={<JpgsAndMore />} />
               <Route path="/commonmodifications" element={<CommonModifications />} />
+              <Route path="/resizingtensors" element={<ResizingImageTensors />} />
+
+              {/*Models*/ }
+              <Route path="/introductionmodels" element={<Introduction />} />
+
             </Routes>
     </BrowserRouter>
     

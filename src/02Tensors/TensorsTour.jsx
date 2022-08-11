@@ -9,7 +9,7 @@ const TensorsTour = () => {
         </div>
 
     <h3 className=" mb-3">Tensors provides speed</h3>
-    <p>When you convert Javascript arrays to tensors, you can perfomr matrix operations at speed of light</p>
+    <p>When you convert Javascript arrays to tensors, you can perfom matrix operations at speed of light</p>
     <p>Computers are excellent to doing a single calculations, and there are benefits to performing  mass grouping of calculations</p>
 
     <h3 className="mt-3 mb-3">Tensors Provides Direct Access</h3>
@@ -19,7 +19,7 @@ const TensorsTour = () => {
     <h4 className="fw-bold">Tensors are like that raw, unrolled data-format, and with that acces you can build, read or predict anything you like</h4>
     <hr />
     <h3 className="mt-3 mb-3">Tensors Batch Data</h3>
-    <p>Tensors are optimized for batch processing at hish speeds
+    <p>Tensors are optimized for batch processing at high speeds
     <p>We've identified that tensors are impressive structures that brings a lot of acceleration and mathematical power to Javascript</p>
     <p>So it makes sense that you'll commonly use this beneficial structure in batches</p>
     </p>

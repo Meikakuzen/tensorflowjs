@@ -40,7 +40,7 @@ const checky= tf.tensor([
         <br />
         <p>A pixel is commonly colored by the order amounts of red, green and blue within the confines of a singular byte</p>
         <p> This 0-255 array values looks like [255,255,255] for integers and like #FFFFFF as an hexadecimal version</p>
-        <p> When our tensor is data type int 32 this is teh interpretation</p>
+        <p> When our tensor is data type int 32 this is the interpretation</p>
         <p>When our tensor is float32 the values are asumed to be in the range 0-1</p>
         <p>So, an integer [255,255,255] represents pure white, but in float form the equivalent would be [1,1,1]</p>
         <p>In float32 [1,1,1] would be #FFFFFF (pure white) and in int32[1,1,1] would be #010101 (black)</p>
@@ -67,6 +67,32 @@ const checky= tf.tensor([
     <p>This tensor method takes a shape, and also a min, max, and data type</p>
     <code>tf.randomUniform([200,200,1], 0, 255, int32)</code>
     <br />
+    <p>You are not limited to RGB. Adding a fourth value to a RGB dimension you will add an alpha channel</p>
+    <p>A value of [1,1,1,0] will be similarly transparent</p>
+    <p>A 1024 x 768  with transparency would be stored in a tensor with a shape[768,1024,4]</p>
+    <p>Of course, you could create arrays using <span>Array.prototype.fill</span> and then use that to fill arrays to create sizable 3D tensor constructors </p>
+    <p>But Tensorflow comes with that functionality built in</p>
+    <p>You can use the methods <span>tf.ones, tf.zeros, tf.fill</span> </p>
+    <p>So this code would create a 1024x768 black image. The optional second parameter  would be the data type for the generated tensor</p>
+    <code>tf.zeros([768,1024,1])</code>
+    <hr />
+    <p>
+      Often, you can run an empty image made with tf.zeros through a model to prellocate memory. The result is inmediatly thrown away, and subsequent calls are much faster.
+      This is often called <span>model warning</span> 
+
+    </p>
+    <hr />
+    <br />
+    <p> <span>tf.fill</span> takes a shape and the second parameter is the value to fill that shape with </p>
+    <p>This works</p>
+    <code>tf.fill([2,2], 1)</code>
+    <br />
+    <p>This fails</p>
+    <code>tf.fill([2,2],[1,1,1]) </code>
+    <br />
+    <p>The second parameter must be a value. This non tensor value is called a scalar</p>
+    <p>To recap, the code tf.fill([200,200,4], 0.5) would create a 200 x 200 gray semi-transparent square</p>
+    
         <Link to="/jpgsandmore" className="text-warning text-decoration-none mx-auto fs-3">Go to <span className= "text-black">next</span></Link>
 
     </div>

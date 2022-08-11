@@ -23,8 +23,14 @@ const Home = () => {
         <Link className="text-decoration-none text-black d-block" to="/visualtensors">Visual Tensors </Link>
         <Link className="text-decoration-none text-black d-block" to="/jpgsandmore">JPGs and PNGs and GIFs, Oh My! </Link>
         <Link className="text-decoration-none text-black d-block" to="/commonmodifications">Common Image Modifications </Link>
+        <Link className="text-decoration-none text-black d-block" to="/resizingtensors">Resizing Image Tensors </Link>
         </ul>
 
+        <label className="fs-4 text-warning">Chapter 5 - <span className="text-black">Models</span></label>
+          <ul>
+
+          <Link className="text-decoration-none text-black d-block" to="/introductionmodels">Introduction </Link>
+          </ul>
     </ol>
     </>
   )

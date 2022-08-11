@@ -46,7 +46,7 @@ const TensorsMemory = () => {
             <h1 className= "text-center text-decoration-underline mb-3">Tensors in Memory</h1>
             <Link to="/"> Back Home</Link>
         </div>
-    <p>Tensor speed comes with an overhead cost</p>
+    <p>Tensors speed comes with an overhead cost</p>
     <p>Usually, when we're done with a variable, the memory is cleanly removed when all references to that variable are completed</p>
     <p>Thi is called automatic garbage detection and collection</p>
     <p>Tensors dont have that kind of automatic care. They persist long after the variable that uses them has been collected</p>
