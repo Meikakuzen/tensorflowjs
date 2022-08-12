@@ -14,6 +14,11 @@ import JpgsAndMore from './03-ImageTensors/JpgsAndMore';
 import CommonModifications from './03-ImageTensors/CommonModifications';
 import ResizingImageTensors from './03-ImageTensors/ResizingImageTensors';
 import Introduction from './04-Models/Introduction';
+import LoadingModels from './04-Models/LoadingModels';
+import FirstConsumedModel from './04-Models/FirstConsumedModel';
+import TensorflowHub from './04-Models/TensorflowHub';
+import OverlayedModel from './04-Models/OverlayedModel';
+import LabelingDetection from './04-Models/LabelingDetection';
 
 
 function App() {
@@ -40,6 +45,11 @@ function App() {
 
               {/*Models*/ }
               <Route path="/introductionmodels" element={<Introduction />} />
+              <Route path="/loadingmodels" element={<LoadingModels />} />
+              <Route path="/firstmodel" element={<FirstConsumedModel />} />
+              <Route path="/tensorflowhub" element={<TensorflowHub />} />
+              <Route path="/overlayedmodel" element={<OverlayedModel />} />
+              <Route path="/labelingdetection" element={<LabelingDetection />} />
 
             </Routes>
     </BrowserRouter>

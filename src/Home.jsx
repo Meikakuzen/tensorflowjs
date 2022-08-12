@@ -30,7 +30,14 @@ const Home = () => {
           <ul>
 
           <Link className="text-decoration-none text-black d-block" to="/introductionmodels">Introduction </Link>
+          <Link className="text-decoration-none text-black d-block" to="/loadingmodels">Loading Models </Link>
+          <Link className="text-decoration-none text-black d-block" to="/firstmodel">First Consumed Model </Link>
+          <Link className="text-decoration-none text-black d-block" to="/tensorflowhub">Tensorflow Hub Model </Link>
+          <Link className="text-decoration-none text-black d-block" to="/overlayedmodel">Overlayed Model </Link>
+          <Link className="text-decoration-none text-black d-block" to="/labelingdetection">Labeling the Detection </Link>
           </ul>
+          <label className="fs-4 text-warning">Chapter 6 - <span className="text-black">Advanced Models and UI</span></label>
+          
     </ol>
     </>
   )
